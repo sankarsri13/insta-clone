@@ -3,12 +3,14 @@
 }
 .nav-bar {
   padding: 10px;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1.2rem;
   box-shadow: 0px 2px 5px gray;
   font-family: "Pacifico", cursive;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #search-bar {
@@ -58,12 +60,21 @@
   align-items: center;
 }
 .each-post {
-  border: 1px solid gray;
+  padding: 2px;
+  width: 600px;
+  border: 0.3px solid gray;
+  border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0px 2px 5px gray;
+  background-color: #ffffff;
+}
+#post-name {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-family: "Titillium Web", sans-serif;
 }
 .user-post {
-  /* max-width: 500px; */
+  width: 100%;
   max-height: 500px;
   text-align: center;
 }
@@ -75,13 +86,93 @@
 }
 #caption {
   margin-left: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Titillium Web", sans-serif;
   margin-bottom: 10px;
 }
-
-@media only screen and (max-width: 550px) {
+#user-name {
+  font-family: "Work Sans";
+}
+.fap {
+  border: 3px solid gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+#caption,
+.cap {
+  display: inline;
+}
+.cap {
+  font-size: 0.9rem;
+  font-family: "Titillium Web", sans-serif;
+}
+.show-block {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
   #search-bar {
     display: none;
   }
+  .right-container {
+    display: none;
+  }
+  .each-post {
+    width: 400px;
+  }
+  .show-block {
+    display: block;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.stories-column {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.us {
+  display: inline;
+}
+body {
+  background-color: #fafafa;
+}
+.suggestions {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  height: 270px;
+}
+.one-user {
+}
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+.sugg {
+  font-size: 15px;
+  opacity: 0.7;
+}
+.username {
+  font-size: 20px;
+}
+.update {
+  line-height: 28px;
+  font-size: 15px;
+}
+.profile-pic2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+.likes {
+  margin-top: 10px;
+  margin-left: 10px;
 }
